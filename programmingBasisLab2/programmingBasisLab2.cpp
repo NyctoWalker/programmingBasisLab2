@@ -11,7 +11,7 @@ int main()
     По условию задачи, должно быть 3 посделовательных блока: чтение и запись, обработка, вывод.*/
     //Блок чтения и записи
     setlocale(LC_ALL, "ru");
-    const SIZE = 10;
+    const int SIZE = 10;
     int arr[SIZE], buffer;
     srand(time(0));
     //int arrChanged[SIZE], newNumber;
@@ -57,27 +57,4 @@ int main()
     cout << "\nПолученный массив:\n";
     for (int i = 0; i < (SIZE); i++) { cout << arr[i] << "\t"; }
     
-#pragma region does not work
-    /*
-    buffer = 0;
-    for (int i = 0; i < SIZE; i++)
-    {
-        if ((arr[i] <= newNumber) && (buffer==0)) //Проверяет, больше ли вставляемое число члена массива, и была ли до этого замена
-        {
-            arrChanged[i] = arr[i];
-        }
-        else if (buffer==0) //Если вставляемое число больше текущего члена массива, происходит замена
-        {
-            arrChanged[i] = newNumber;
-            buffer = 1;
-        }
-        else
-        {
-            arrChanged[i] = arr[i-1];
-        }
-
-        cout << arrChanged[i] << "\t";
-    }
-    */
-#pragma endregion
 }
